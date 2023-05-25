@@ -1,0 +1,30 @@
+<!-- add-pizza.component.html -->
+<h3>Aggiungi Pizza</h3>
+
+<div class="mb-3 col-8">
+  <label for="" class="form-label">Nome</label>
+  <input type="text" class="form-control" placeholder="Inserisci un nome" [(ngModel)]="nome">
+</div>
+
+<div class="mb-3 col-8">
+  <label for="" class="form-label">Prezzo</label>
+  <input type="number" class="form-control" placeholder="Inserisci un prezzo" [(ngModel)]="prezzo">
+</div>
+
+<div class="mb-3 col-8">
+  <label for="" class="form-label">Ingredienti</label>
+  <input type="text" class="form-control" placeholder="Inserisci gli ingredienti" [(ngModel)]="ingredienti">
+</div>
+
+<div class="mb-3 col-8">
+  <label for="" class="form-label">Pizzaioli</label>
+  <input type="text" class="form-control" placeholder="Inserisci i pizzaioli" [(ngModel)]="pizzaioli">
+</div>
+
+<button type="button" class="btn btn-primary" (click)="createPizza()">Aggiungi</button>
+
+<div class="mt-3">
+  <h4>Nuova pizza aggiunta</h4>
+  <h3>{{ pizze?.nome }}</h3>
+  <h3>{{ pizze?.prezzo | currency: 'EUR' }}</h3>
+</div>

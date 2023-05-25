@@ -1,0 +1,18 @@
+1. Creare i servizi per gestire l'aggiunta e la visualizzazione delle pizze.
+
+2. Pizza Model devono essere attive le prop "Ingredienti" e "Pizzaiolo"
+
+3. Quando mostro l'elenco delle pizze mostro solo il nome. Al click sul nome, in un altro div vedrò tutti i dettagli della pizza
+
+
+4.Crea il component carrello. Nella card "dettaglioPizza" avrò il pulsante Compra che registrerà l'informazione per il carrello.
+4.b Mostra il carrello al fondo della pagina generale
+
+5. Componi una lista di ingredienti base (farina, pomodoro, mozzarella).
+Quando apro il dettaglio di una qualsiasi pizza se ci sono ingredienti diversi da quelli standard verranno contrassegnati (underline).
+Es: pizza con funghi (farina, pomodoro, mozzarella, funghi[sottolineato])
+Quando sono presenti ingredienti non di base comparirà un altro pulsante con scritto "Compra Ingredienti". Al click verranno aggiunti questi ingredienti a quelli base
+
+
+
+5. Il component carrello deve essere mostrato in un'altra pagina.
