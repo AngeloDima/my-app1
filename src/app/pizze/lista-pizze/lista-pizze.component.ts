@@ -9,8 +9,10 @@ import { Pizza } from 'src/app/shared/models/pizze.models';
 })
 export class ListaPizzeComponent {
 
+  //creo un contenitore per i dati
   pizze: Pizza[]
 
+  //chiamo i dati dal service
   constructor(private chiamoPizze: AddService) {
     this.pizze = this.chiamoPizze.getPizze();
   }

@@ -10,20 +10,31 @@ import { ingrediente, Pizza, Pizzaiolo } from 'src/app/shared/models/pizze.model
 })
 
 export class AddPizzaComponent {
-  pizze: Pizza;
+  //contenitore
+  pizze: Pizza[];
+
+  //var ngModel
   nome: string;
   prezzo: number;
   ingredienti: ingrediente[];
   pizzaioli: Pizzaiolo[];
 
-  constructor(private addPizz: AddService) { }
+  //chiamo il service
+  constructor(private addService: AddService) { }
 
-  createPizza(): void {
-    this.addPizz.createPizza(this.nome, this.prezzo, this.ingredienti, this.pizzaioli);
+  //passo i parametri
+  onCreatePizza() {
+
+    //paramentri
+    this.addService.createPizza(this.nome, this.prezzo, this.ingredienti, this.pizzaioli);
+
+    //richiamo le var con gli ngModel
     this.nome = '';
     this.prezzo = null;
     this.ingredienti = [];
     this.pizzaioli = [];
-    this.pizze = this.addPizz.getPizze()[this.addPizz.getPizze().length - 1];
+
+    //riempio il contenitore pizze
+    this.pizze = this.addService.getPizze();
   }
 }

@@ -9,13 +9,13 @@ import { Pizza } from 'src/app/shared/models/pizze.models';
 })
 export class CartComponent {
   carrello: Pizza[];
-
+  //richiamo il service
   constructor(private cartServ: AddService) {
     this.carrello = [];
   }
 
 
-
+  // riempio il contenitore carrello dal service
   ngOnInit(): void {
     this.carrello = this.cartServ.getCart();
   }

@@ -12,18 +12,23 @@ export class AddService {
 
   constructor() { }
 
-  createPizza(nome: string, prezzo: number, ingredienti: ingrediente[], pizzaiolo: Pizzaiolo[]): void {
-    const pizza: Pizza = { nome, prezzo, ingredienti, pizzaioli: pizzaiolo };
+
+  //creo la funzione per creare le pizze
+  createPizza(nome: string, prezzo: number, ingredienti: ingrediente[], pizzaioli: Pizzaiolo[]): void {
+    let pizza: Pizza = { nome, prezzo, ingredienti, pizzaioli };
     this.pizze.push(pizza);
-    console.log(this.pizze);
+    // console.log(this.pizze);
   }
 
-
+  //riempio il contenitore pizze
   getPizze(): Pizza[] {
     return this.pizze;
   }
 
 
+
+
+  //cerco la pizza per nome
   getByNome(nome: string): Observable<Pizza> {
     const pizza = this.pizze.find(pizza => pizza.nome === nome);
     if (pizza) {
@@ -36,6 +41,9 @@ export class AddService {
     }
   }
 
+
+
+
   addToCart(pizza: Pizza): void {
     this.carrello.push(pizza)
   }
@@ -43,6 +51,9 @@ export class AddService {
   getCart(): Pizza[] {
     return this.carrello
   }
+
+
+
 }
 
 

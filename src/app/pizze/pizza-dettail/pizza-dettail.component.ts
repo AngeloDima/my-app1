@@ -12,9 +12,9 @@ import { Pizza } from 'src/app/shared/models/pizze.models';
 export class PizzaDettailComponent implements OnInit {
 
   dettail?: Pizza
-
+  //richiamo il service                        e il routing
   constructor(private chiamoPizze: AddService, private route: ActivatedRoute) { }
-
+  //routing
   ngOnInit(): void {
     let nome = this.route.snapshot.paramMap.get("nome")
     if (nome != null) {
@@ -23,7 +23,7 @@ export class PizzaDettailComponent implements OnInit {
   }
 
 
-
+  //mando i dati da Sinistra al carrello
   addToCart(): void {
     if (this.dettail) {
       this.chiamoPizze.addToCart(this.dettail)

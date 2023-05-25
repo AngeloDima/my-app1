@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { PizzeComponent } from './pizze/pizze.component';
 import { AddPizzaComponent } from './pizze/add-pizza/add-pizza.component';
 import { ListaPizzeComponent } from './pizze/lista-pizze/lista-pizze.component';
-import { PizzaComponent } from './pizze/lista-pizze/pizza/pizza.component';
 import { FormsModule } from '@angular/forms';
 import { PizzaDettailComponent } from './pizze/pizza-dettail/pizza-dettail.component';
 import { CartComponent } from './pizze/pizza-dettail/cart/cart.component';
@@ -19,7 +18,6 @@ import { CartComponent } from './pizze/pizza-dettail/cart/cart.component';
     PizzeComponent,
     AddPizzaComponent,
     ListaPizzeComponent,
-    PizzaComponent,
     PizzaDettailComponent,
     CartComponent,
   ],
