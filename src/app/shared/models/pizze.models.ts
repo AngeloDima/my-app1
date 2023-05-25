@@ -3,7 +3,7 @@ export class Pizza {
   nome: string;
   prezzo: number;
   ingredienti?: ingrediente[];
-  pizzaiolo?: Pizzaiolo[];
+  pizzaioli?: Pizzaiolo[];
 
 
 
@@ -34,3 +34,6 @@ export class ingrediente {
     this.ingrediente = ingrediente
   }
 }
+
+
+

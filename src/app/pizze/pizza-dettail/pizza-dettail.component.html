@@ -1,0 +1,6 @@
+<div *ngIf="dettail">
+  <h1> {{dettail.nome}} </h1>
+  <h3>{{dettail.prezzo}}</h3>
+  <button type="submit" (click)="addToCart()">Aggiungi al carrello</button>
+</div>
+<app-cart></app-cart>

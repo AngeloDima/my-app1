@@ -8,6 +8,7 @@ import { ingrediente, Pizza, Pizzaiolo } from 'src/app/shared/models/pizze.model
   templateUrl: './add-pizza.component.html',
   styleUrls: ['./add-pizza.component.scss']
 })
+
 export class AddPizzaComponent {
   pizze: Pizza;
   nome: string;

@@ -1,0 +1,14 @@
+.cart{
+  min-width: 350px;
+  min-height: 450px;
+  background-color: aliceblue;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  h2{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  }
+}
